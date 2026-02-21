@@ -12,17 +12,12 @@ function Hero() {
 
       <div className="relative z-10 max-w-3xl px-6">
         <h1 className="text-5xl md:text-6xl font-bold text-orange-500 mb-4 drop-shadow-lg">
-          Shivaji Mandal
+          श्री राम सेवा मंडळ, रामवाडी
         </h1>
         <p className="text-gray-800 dark:text-gray-200 mb-8">
           Serving our village with unity and pride
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <HeroBtn label="About Us" link="#about" />
-          <HeroBtn label="Our Events" link="#events" />
-          <HeroBtn label="Our Members" link="#members" />
-          <HeroBtn label="Contact Us" link="#contact" />
-        </div>
+        
       </div>
     </section>
   );

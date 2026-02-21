@@ -2,86 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== FONT ===== */
+/* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-/* ===== GLOBAL ===== */
 * {
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
 }
 
-/* ===== BODY ===== */
-body {
-  background: white;
-  color: #111827;
+/* LIGHT THEME COLORS */
+:root {
+  --primary: #f59e0b;
+  --dark: #111827;
+  --light: #ffffff;
 }
 
-.dark body {
-  background: #070707;
-  color: white;
+/* HERO BACKGROUND */
+.hero-bg {
+  background-image: url("https://images.unsplash.com/photo-1604608672516-7c2d5e6f27bb?q=80&w=2070&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
 }
 
-/* ===== NAVBAR BLUR ===== */
-.nav-blur {
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.dark .nav-blur {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-/* ===== HERO ORANGE GLOW ===== */
-.hero-glow {
-  background: radial-gradient(
-    circle at top,
-    rgba(255, 140, 0, 0.35),
-    transparent 60%
-  );
-}
-
-/* ===== GLASS CARD ===== */
-.glass {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 140, 0, 0.4);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-}
-
-.dark .glass {
-  background: rgba(0, 0, 0, 0.4);
-}
-
-/* ===== ORANGE BUTTON ===== */
-.btn-orange {
-  background: #ff8c00;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.btn-orange:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 140, 0, 0.6);
-}
-
-/* ===== IMAGE HOVER ===== */
-.img-hover {
-  transition: 0.4s;
-}
-
-.img-hover:hover {
-  transform: scale(1.08);
-}
-
-/* ===== SCROLLBAR ===== */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ff8c00;
-  border-radius: 10px;
-}

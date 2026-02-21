@@ -9,7 +9,7 @@ function Navbar({ dark, setDark }) {
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-orange-500" />
           <div>
-            <div className="text-xl font-bold text-orange-500">Shivaji Mandal</div>
+            <div className="text-xl font-bold text-orange-500">Shree Ram Seva Mandal, Ramwadi</div>
             <div className="text-xs text-gray-500 dark:text-gray-400">Serving our village with unity</div>
           </div>
         </div>
@@ -23,10 +23,8 @@ function Navbar({ dark, setDark }) {
         </div>
 
         <div className="flex items-center gap-4">
-          <button onClick={() => setDark(!dark)} className="border border-orange-500 px-3 py-1 rounded text-orange-500">
-            {dark ? "☀" : "🌙"}
-          </button>
-          <button className="hidden md:block border border-orange-500 px-4 py-2 rounded text-orange-500">
+          
+          <button className="hidden md:block border border-orange-500 px-4 py-2 rounded text-orange-500 ">
             Join Us
           </button>
           <button onClick={() => setOpen(!open)} className="md:hidden text-orange-500 text-2xl">☰</button>

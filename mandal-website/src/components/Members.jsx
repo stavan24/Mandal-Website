@@ -5,10 +5,10 @@ function Members() {
       <div className="text-gray-500 dark:text-gray-400 mb-10">Meet Our Team</div>
 
       <div className="flex flex-wrap justify-center gap-8">
-        <Member img="/member1.jpg" name="Rajesh Patil" role="President" />
-        <Member img="/member2.jpg" name="Amit Deshmukh" role="Vice President" />
-        <Member img="/member3.jpg" name="Sanjay More" role="Secretary" />
-        <Member img="/member4.jpg" name="Vikas Jain" role="Treasurer" />
+        <Member img="/member1.jpg" name="Raju Pattere" role="President" />
+        <Member img="/member2.jpg" name="Ganpat Halde" role="Vice President" />
+       
+        <Member img="/member4.jpg" name="Shashikant Warange" role="Treasurer" />
       </div>
     </section>
   );
@@ -26,4 +26,4 @@ function Member({ img, name, role }) {
   );
 }
 
-export default Members
+export default Members  
