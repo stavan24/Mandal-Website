@@ -1,15 +1,9 @@
 function Footer() {
   return (
-    <footer style={footer}>
-      <p>© Shree Ram Seva Mandal</p>
+    <footer className="bg-white dark:bg-black text-center py-6 border-t border-orange-500 text-gray-500 dark:text-gray-400">
+      © 2025 Shivaji Mandal. All rights reserved.
     </footer>
-  )
-}
-
-const footer = {
-  padding: "20px",
-  background: "#000",
-  textAlign: "center",
+  );
 }
 
 export default Footer

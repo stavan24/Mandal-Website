@@ -1,27 +1,29 @@
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import About from "./components/About"
-import Activities from "./components/Activites"
-import Events from "./components/Events"
-import Members from "./components/Members"
-import Gallery from "./components/Gallery"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
+import React, { useState } from "react";
 
-function App() {
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Events from "./components/Events";
+import Members from "./components/Members";
+import GalleryContact from "./components/GalleryContact";
+import Footer from "./components/Footer";
+
+export default function App() {
+  const [dark, setDark] = useState(true);
+
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Activities />
-      <Events />
-      <Members />
-      <Gallery />
-      <Contact />
-      <Footer />
-    </>
-  )
-}
+    <div className={dark ? "dark" : ""}>
+      <div className="min-h-screen bg-white dark:bg-[#070707] text-gray-900 dark:text-white transition-colors duration-500">
+        
+        <Navbar dark={dark} setDark={setDark} />
+        <Hero />
+        <About />
+        <Events />
+        <Members />
+        <GalleryContact />
+        <Footer />
 
-export default App
+      </div>
+    </div>
+  );
+}

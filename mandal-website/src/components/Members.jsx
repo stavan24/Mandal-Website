@@ -1,17 +1,29 @@
 function Members() {
   return (
-    <section id="members">
-      <div className="container">
-        <h2>Our Team</h2>
+    <section id="members" className="py-20 text-center border-t border-orange-500/20">
+      <h2 className="text-4xl text-orange-500 mb-2">Our Members</h2>
+      <div className="text-gray-500 dark:text-gray-400 mb-10">Meet Our Team</div>
 
-        <div className="grid">
-          <div className="card">Raju Patere — Adhyaksha</div>
-          <div className="card">Gappat Halde — Upadhyaksha</div>
-          <div className="card">Shashikant Warange — Treasurer</div>
-        </div>
+      <div className="flex flex-wrap justify-center gap-8">
+        <Member img="/member1.jpg" name="Rajesh Patil" role="President" />
+        <Member img="/member2.jpg" name="Amit Deshmukh" role="Vice President" />
+        <Member img="/member3.jpg" name="Sanjay More" role="Secretary" />
+        <Member img="/member4.jpg" name="Vikas Jain" role="Treasurer" />
       </div>
     </section>
-  )
+  );
+}
+
+function Member({ img, name, role }) {
+  return (
+    <div className="bg-white dark:bg-[#111] w-[220px] border border-orange-500/30 rounded overflow-hidden shadow-lg hover:scale-105 transition">
+      <img src={img} className="w-full h-[220px] object-cover" />
+      <div className="p-3">
+        <div className="font-semibold">{name}</div>
+        <div className="text-sm text-gray-500 dark:text-gray-400">{role}</div>
+      </div>
+    </div>
+  );
 }
 
 export default Members
