@@ -5,14 +5,14 @@ function Events() {
       <div className="text-gray-500 dark:text-gray-400 mb-10">What's Happening</div>
 
       <div className="flex flex-wrap justify-center gap-10 px-6">
-        <EventCard img="/shreeram.png" title="Ganesh Festival" date="August 2024" />
-        <EventCard img="/blood.png" title="Blood Donation" date="September 2024" />
-        <EventCard img="/shreeram.png" title="Cleanliness Drive" date="October 2024" />
+        
+        <EventCard img="/ram.png" title="75th Ram navami" date="March 2026" />
+        <EventCard img="/blood.png" title="Blood Donation" date="September 2027" />
+        <EventCard img="/cleanliness.png" title="Cleanliness Drive" date="October 2026" />
+        <EventCard img="/cleanliness.png" title="" date="October 2026" />
       </div>
 
-      <button className="mt-10 bg-orange-500 text-white px-6 py-3 rounded shadow-lg hover:scale-105 transition">
-        View All Events
-      </button>
+      
     </section>
   );
 }

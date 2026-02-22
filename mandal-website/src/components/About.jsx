@@ -51,7 +51,7 @@ Social Service Activities:
 
         </p>
       </div>
-      <img src="/shreeram.png" className="rounded-xl shadow-xl shadow-white hover:scale-105 transition" />
+      <img src="/trees.png" className="rounded-xl shadow-xl shadow-white hover:scale-105 transition" />
     </section>
   );
 }

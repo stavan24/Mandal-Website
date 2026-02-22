@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 function Hero() {
   const images = [
     "./public/shreeram.png",
-    "./public/hero2.jpg",
-    "./public/hero3.jpg",
+    "./public/trees.png",
+    "./public/village.png",
   ];
 
   const [current, setCurrent] = useState(0);
