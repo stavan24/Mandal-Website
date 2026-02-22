@@ -5,7 +5,7 @@ function About() {
         <h2 className="text-4xl text-orange-500 mb-2">About Us</h2>
         <div className="text-orange-400 mb-4">Our Story & Mission</div>
         <p className="text-gray-600 dark:text-gray-300">
-• Established around 75 years ago by teachers and local residents
+• Established by <strong>Late. Daulat Putlaji Telange (Master)</strong> and  <strong>Late. Vithoba Moruji Kalekar (Master)</strong> around 75 years ago on 1952 
 <br />
 • Dedicated to social service, cultural values, and community unity
 <br />
@@ -13,7 +13,7 @@ function About() {
 <br />
 • Organizes health awareness activities for the public
 <br />
-• Main aim: promote dharma and the teachings of Lord Rama
+• Main aim: Promote dharma and the teachings of Lord Rama
 <br />
 • Conducting Ram Navami celebrations continuously for decades
 <br />
@@ -24,7 +24,7 @@ function About() {
 • Works for harmony, service, and cultural preservation
 <br />
 <br />
-Major Festivals Celebrated:
+<strong>Major Festivals Celebrated:</strong>
 <br />
 • Ram Navami
 <br />
@@ -32,20 +32,29 @@ Major Festivals Celebrated:
 <br />
 • Hanuman Jayanti
 <br />
+
+• Gokul Ashtami
+<br />
 • Religious processions and devotional programs
 <br />
 • Community prayer and cultural gatherings
 <br />
 <br />
-Social Service Activities:
+<strong>Social Service Activities:</strong>
 <br />
 • Educational support initiatives for students
+
+<br />
+• Spiritual, Traditional, Social, Cultural, Art and Sports Activities
 <br />
 • Health check-up and awareness camps
 <br />
 • Community service and volunteer programs
 <br />
 • Cultural and spiritual guidance activities
+
+<br />
+• We organize spiritual tours
 <br />
 <br />
 

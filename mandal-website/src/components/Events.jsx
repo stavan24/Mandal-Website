@@ -9,7 +9,7 @@ function Events() {
         <EventCard img="/ram.png" title="75th Ram navami" date="March 2026" />
         <EventCard img="/blood.png" title="Blood Donation" date="September 2027" />
         <EventCard img="/cleanliness.png" title="Cleanliness Drive" date="October 2026" />
-        <EventCard img="/cleanliness.png" title="" date="October 2026" />
+        <EventCard img="/plantation.png" title="Tree Plantation" date="October 2026" />
       </div>
 
       
