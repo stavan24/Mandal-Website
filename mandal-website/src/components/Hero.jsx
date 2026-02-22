@@ -42,7 +42,7 @@ function Hero() {
           श्री राम सेवा मंडळ, रामवाडी
         </h1>
         <p className="text-gray-800 dark:text-gray-200 mb-8">
-          Serving our village with unity and pride
+          Serving our society with unity and pride
         </p>
          {/* 🔥 GALLERY BUTTON */}
         <Link
