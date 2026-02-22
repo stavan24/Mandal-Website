@@ -6,14 +6,26 @@ function Navbar({ dark, setDark }) {
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/90 backdrop-blur border-b border-orange-500/40">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+
+        {/* Logo + Title */}
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-orange-500" />
+          <img
+            className="h-10 w-auto"
+            src="/shreeram.png"
+            alt="logo"
+          />
+
           <div>
-            <div className="text-xl font-bold text-orange-500">Shree Ram Seva Mandal, Ramwadi</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">Serving our village with unity</div>
+            <div className="text-2xl font-bold text-orange-500">
+              श्री राम सेवा मंडळ
+            </div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">
+              Serving our village with unity
+            </div>
           </div>
         </div>
 
+        {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 text-sm">
           <a href="#" className="text-orange-500">Home</a>
           <a href="#about" className="hover:text-orange-500">About</a>
@@ -22,15 +34,22 @@ function Navbar({ dark, setDark }) {
           <a href="#contact" className="hover:text-orange-500">Contact</a>
         </div>
 
+        {/* Right Side */}
         <div className="flex items-center gap-4">
-          
-          <button className="hidden md:block border border-orange-500 px-4 py-2 rounded text-orange-500 ">
+          <button className="hidden md:block border border-orange-500 px-4 py-2 rounded text-orange-500">
             Join Us
           </button>
-          <button onClick={() => setOpen(!open)} className="md:hidden text-orange-500 text-2xl">☰</button>
+
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden text-orange-500 text-2xl"
+          >
+            ☰
+          </button>
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {open && (
         <div className="md:hidden flex flex-col items-center gap-5 py-6 bg-white dark:bg-black border-t border-orange-500">
           <a href="#about">About</a>
@@ -43,4 +62,4 @@ function Navbar({ dark, setDark }) {
   );
 }
 
-export default Navbar
+export default Navbar;

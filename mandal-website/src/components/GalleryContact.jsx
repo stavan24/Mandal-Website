@@ -5,10 +5,10 @@ function GalleryContact() {
         <h2 className="text-4xl text-orange-500 mb-2">Photo Gallery</h2>
         <div className="text-gray-500 dark:text-gray-400 mb-6">Our Activities & Events</div>
         <div className="grid grid-cols-2 gap-4">
-          <img src="/g1.jpg" className="rounded shadow-md hover:scale-105 transition" />
-          <img src="/g2.jpg" className="rounded shadow-md hover:scale-105 transition" />
-          <img src="/g3.jpg" className="rounded shadow-md hover:scale-105 transition" />
-          <img src="/g4.jpg" className="rounded shadow-md hover:scale-105 transition" />
+          <img src="/shreeram.png" className="rounded shadow-md hover:scale-105 transition" />
+          <img src="/shreeram.png" className="rounded shadow-md hover:scale-105 transition" />
+          <img src="/shreeram.png" className="rounded shadow-md hover:scale-105 transition" />
+          <img src="/shreeram.png" className="rounded shadow-md hover:scale-105 transition" />
         </div>
       </div>
 

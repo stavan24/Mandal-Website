@@ -5,10 +5,10 @@ function Members() {
       <div className="text-gray-500 dark:text-gray-400 mb-10">Meet Our Team</div>
 
       <div className="flex flex-wrap justify-center gap-8">
-        <Member img="/member1.jpg" name="Raju Pattere" role="President" />
-        <Member img="/member2.jpg" name="Ganpat Halde" role="Vice President" />
+        <Member img="/shreeram.png" name="Raju Pattere" role="President" />
+        <Member img="/shreeram.png" name="Ganpat Halde" role="Vice President" />
        
-        <Member img="/member4.jpg" name="Shashikant Warange" role="Treasurer" />
+        <Member img="/shreeram.png" name="Shashikant Warange" role="Treasurer" />
       </div>
     </section>
   );

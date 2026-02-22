@@ -5,9 +5,9 @@ function Events() {
       <div className="text-gray-500 dark:text-gray-400 mb-10">What's Happening</div>
 
       <div className="flex flex-wrap justify-center gap-10 px-6">
-        <EventCard img="/event1.jpg" title="Ganesh Festival" date="August 2024" />
-        <EventCard img="/event2.jpg" title="Football Tournament" date="September 2024" />
-        <EventCard img="/event3.jpg" title="Cleanliness Drive" date="October 2024" />
+        <EventCard img="/shreeram.png" title="Ganesh Festival" date="August 2024" />
+        <EventCard img="/blood.png" title="Blood Donation" date="September 2024" />
+        <EventCard img="/shreeram.png" title="Cleanliness Drive" date="October 2024" />
       </div>
 
       <button className="mt-10 bg-orange-500 text-white px-6 py-3 rounded shadow-lg hover:scale-105 transition">
@@ -20,7 +20,7 @@ function Events() {
 function EventCard({ img, title, date }) {
   return (
     <div className="bg-white dark:bg-[#111] w-[300px] rounded overflow-hidden border border-orange-500/30 shadow-lg hover:scale-105 transition">
-      <img src={img} className="w-full h-[180px] object-cover" />
+      <img src={img} className="w-[600px] h-[400px] object-cover" />
       <div className="p-4 text-left">
         <div className="font-semibold">{title}</div>
         <div className="text-sm text-gray-500 dark:text-gray-400">{date}</div>

@@ -1,8 +1,35 @@
+import { useEffect, useState } from "react";
+
 function Hero() {
+  const images = [
+    "./public/shreeram.png",
+    "./public/hero2.jpg",
+    "./public/hero3.jpg",
+  ];
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="h-screen relative flex items-center justify-center text-center overflow-hidden">
-      {/* HERO IMAGE */}
-      <img src="/banner.jpg" className="absolute inset-0 w-full h-full object-cover scale-110" />
+      
+      {/* HERO IMAGES (carousel) */}
+      {images.map((img, index) => (
+        <img
+          key={index}
+          src={img}
+          className={`absolute inset-0 w-full h-full object-cover scale-110 transition-opacity duration-1000 ${
+            index === current ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      ))}
 
       {/* LIGHT MODE OVERLAY */}
       <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/50 to-white dark:from-black/80 dark:via-black/70 dark:to-black" />
@@ -17,7 +44,6 @@ function Hero() {
         <p className="text-gray-800 dark:text-gray-200 mb-8">
           Serving our village with unity and pride
         </p>
-        
       </div>
     </section>
   );
@@ -31,4 +57,4 @@ function HeroBtn({ label, link }) {
   );
 }
 
-export default Hero
+export default Hero;
