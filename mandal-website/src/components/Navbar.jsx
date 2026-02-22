@@ -21,7 +21,7 @@ function Navbar({ dark, setDark }) {
               श्री राम सेवा मंडळ
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-400">
-              Serving our village with unity
+              Serving our society with unity
             </div>
           </div>
         </div>
