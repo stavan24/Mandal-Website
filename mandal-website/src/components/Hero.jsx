@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 function Hero() {
   const images = [
     "./public/shreeram.png",
@@ -44,6 +44,13 @@ function Hero() {
         <p className="text-gray-800 dark:text-gray-200 mb-8">
           Serving our village with unity and pride
         </p>
+         {/* 🔥 GALLERY BUTTON */}
+        <Link
+          to="/gallery"
+          className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+        >
+          View Gallery
+        </Link>
       </div>
     </section>
   );

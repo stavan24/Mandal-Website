@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function Navbar({ dark, setDark }) {
@@ -25,14 +26,16 @@ function Navbar({ dark, setDark }) {
           </div>
         </div>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8 text-sm">
-          <a href="#" className="text-orange-500">Home</a>
-          <a href="#about" className="hover:text-orange-500">About</a>
-          <a href="#events" className="hover:text-orange-500">Events</a>
-          <a href="#members" className="hover:text-orange-500">Members</a>
-          <a href="#contact" className="hover:text-orange-500">Contact</a>
-        </div>
+       {/* Desktop Menu */}
+<div className="hidden md:flex gap-8 text-sm">
+  <a href="/#Hero" className="text-orange-500">Home</a>
+  <a href="/#about" className="hover:text-orange-500">About</a>
+  <a href="/#events" className="hover:text-orange-500">Events</a>
+  <a href="/#members" className="hover:text-orange-500">Members</a>
+  <a href="/#contact" className="hover:text-orange-500">Contact</a>
+
+  
+</div>
 
         {/* Right Side */}
         <div className="flex items-center gap-4">
